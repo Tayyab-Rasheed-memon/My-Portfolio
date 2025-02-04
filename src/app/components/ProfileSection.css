@@ -1,0 +1,331 @@
+    /* Navbar Styles */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background: rgba(0, 0, 0, 0.8);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        animation: slideDown 1s ease-in-out; /* Navbar Slide Down Animation */
+    }
+
+    .logo {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #4caf50;
+        animation: fadeIn 1.5s ease-in-out; /* Logo Fade In */
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 1.5rem;
+        list-style: none;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.2rem;
+        transition: color 0.3s ease, transform 0.3s ease, letter-spacing 0.3s ease;
+    }
+
+    .nav-links a:hover {
+        color: #60a5fa;
+        transform: scale(1.1);
+        letter-spacing: 1px; /* Slight letter-spacing on hover */
+    }
+
+    /* Profile Section Styles */
+    .profile-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: #000;
+        color: white;
+        text-align: center;
+        animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .profile-content {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .profile-image-container {
+        position: relative;
+        animation: bounceIn 1.5s ease-in-out;
+    }
+
+    .profile-image {
+        width: 12rem;
+        height: 12rem;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0px 0px 15px #16a34a;
+    }
+
+    .profile-details {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .profile-name {
+        font-size: 3rem;
+        font-weight: bold;
+        color: #4caf50;
+        animation: slideIn 1s ease-in-out;
+    }
+
+    .profile-title {
+        font-size: 1.75rem;
+        color: #60a5fa;
+        animation: fadeInUp 1.2s ease-in-out;
+    }
+
+    .animated-text {
+        display: inline-block;
+        animation: colorChange 2s infinite alternate;
+    }
+
+    .profile-description {
+        font-size: 1.125rem;
+        line-height: 1.6;
+        animation: slideIn 1.4s ease-in-out;
+    }
+
+    .social-links {
+        display: flex;
+        gap: 1.5rem;
+        animation: slideIn 1.6s ease-in-out;
+    }
+
+    .social-link {
+        font-size: 1.5rem;
+        color: white;
+        text-decoration: none;
+        transition: transform 0.3s ease;
+    }
+
+    .social-link:hover {
+        color: #60a5fa;
+        transform: scale(1.2);
+    }
+
+    .hire-me-button {
+        margin-top: 1rem;
+        padding: 1rem 2rem;
+        background: linear-gradient(to right, #16a34a, #60a5fa);
+        color: white;
+        border: none;
+        border-radius: 50px;
+        font-size: 1.25rem;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    .hire-me-button:hover {
+        transform: scale(1.1);
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+        from { transform: translateY(20px); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes slideIn {
+        from { transform: translateX(-20px); opacity: 0; }
+        to { transform: translateX(0); opacity: 1; }
+    }
+
+    @keyframes bounceIn {
+        0% { transform: scale(0.9); opacity: 0; }
+        100% { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes colorChange {
+        from { color: #16a34a; }
+        to { color: #60a5fa; }
+    }
+
+    @keyframes slideDown {
+        from { transform: translateY(-50px); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+    }
+
+/* Navbar Styles
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    /* padding: 1rem 2rem;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #4caf50;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #60a5fa;
+    transform: scale(1.1);
+}
+
+ Profile Section Styles 
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.profile-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.profile-image-container {
+    position: relative;
+    animation: bounceIn 1.5s ease-in-out;
+}
+
+.profile-image {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 0px 15px #16a34a;
+}
+
+.profile-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.profile-name {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #4caf50;
+    animation: slideIn 1s ease-in-out;
+}
+
+.profile-title {
+    font-size: 1.75rem;
+    color: #60a5fa;
+    animation: fadeInUp 1.2s ease-in-out;
+}
+
+.animated-text {
+    display: inline-block;
+    animation: colorChange 2s infinite alternate;
+}
+
+.profile-description {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    animation: slideIn 1.4s ease-in-out;
+}
+
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+    animation: slideIn 1.6s ease-in-out;
+}
+
+.social-link {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.social-link:hover {
+    color: #60a5fa;
+    transform: scale(1.2);
+}
+
+.hire-me-button {
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    background: linear-gradient(to right, #16a34a, #60a5fa);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.hire-me-button:hover {
+    transform: scale(1.1);
+}
+
+//Animations 
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-20px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes bounceIn {
+    0% { transform: scale(0.9); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes colorChange {
+    from { color: #16a34a; }
+    to { color: #60a5fa; }
+}
+
+@keyframes fadeInDown {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+} */
