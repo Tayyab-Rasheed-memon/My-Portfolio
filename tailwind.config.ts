@@ -14,28 +14,32 @@ export default {
       },
       animation: {
         slideInNavbar: "slideInNavbar 0.5s ease-out",
-        popIn: "popIn 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards",
-        staggerFadeIn: "staggerFadeIn 0.5s ease-out forwards"
+        'slide-up-fade': "slideUpFadeIn 0.8s ease-out forwards",
+        'float': "float 3s ease-in-out infinite"
       },
       keyframes: {
         slideInNavbar: {
           '0%': { transform: 'translateY(-100%)' },
           '100%': { transform: 'translateY(0)' },
         },
-        popIn: {
-          '0%': { transform: 'scale(0.5)', opacity: '0' },
-          '80%': { transform: 'scale(1.1)', opacity: '1' },
-          '100%': { transform: 'scale(1)', opacity: '1' },
+        slideUpFadeIn: {
+          'from': { opacity: '0', transform: 'translateY(20px)' },
+          'to': { opacity: '1', transform: 'translateY(0)' },
         },
-        staggerFadeIn: {
-          '0%': { opacity: '0', transform: 'translateY(-10px)' },
-          '100%': { opacity: '1', transform: 'translateY(0)' },
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' },
         }
       },
-      plugins: [],
+      container: {
+        center: true,
+        padding: '1rem',
+      }
     },
   },
+  plugins: [],
 } satisfies Config;
+
 
 
 
