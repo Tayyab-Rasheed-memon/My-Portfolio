@@ -580,26 +580,26 @@ return (
 
         {/* Footer Bottom Section */}
         <div className="mt-8 text-center">
-  <p className="text-sm text-gray-400 mb-4">&copy; 2025 Tayyab Rasheed Memon. All Rights Reserved.</p>
-  <div className="flex justify-center space-x-6">
-    <a href="https://github.com" className="text-gray-400 hover:text-green-500">
-      <i className="fab fa-github"></i>
-    </a>
-    <a href="https://linkedin.com" className="text-gray-400 hover:text-green-500">
-      <i className="fab fa-linkedin"></i>
-    </a>
-    <a href="https://facebook.com" className="text-gray-400 hover:text-green-500">
-      <i className="fab fa-facebook"></i>
-    </a>
+          <p className="text-sm text-gray-400 mb-4">&copy; 2025 Tayyab Rasheed Memon. All Rights Reserved.</p>
+          <div className="flex justify-center space-x-6">
+            <a href="https://github.com" className="text-gray-400 hover:text-green-500">
+              <i className="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com" className="text-gray-400 hover:text-green-500">
+              <i className="fab fa-linkedin"></i>
+            </a>
+            <a href="https://facebook.com" className="text-gray-400 hover:text-green-500">
+              <i className="fab fa-facebook"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
 </div>
-</footer>
-</div>
-</div>
-</div>
+
       
-    
-    
+    </div>
   );
 };
 
